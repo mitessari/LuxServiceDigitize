@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./app/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- animatxe.style cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- abstracts, home css -->
+    <link rel="stylesheet" href="./css/abstracts.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>LuxService Landing Page</title>
+  </head>
+  <body>
+    <!-- wrap page inside 1440 container -->
+    <div class="easybank-landing-page">
+      <!-- navbar -->
+      <header>
+        <nav class="navbar-nav container">
+          <a class="logo" href="#">
+            <img src="./images/logo-luxService.png" alt="Digitalize logo image" />
+          </a>
+
+          <div class="navbar-overlay is-hidden"></div>
+<!-- 
+          <ul class="navbar-items navbar-mobile is-hidden animate__animated">
+            <div class="dropdown">
+              <button class="dropbtn">Company
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Meet The Team</a>
+                <a href="#">About Us</a>
+                <a href="#">Partnerships</a>
+              </div>
+            </div>
+            <li><a href="#">Our Work</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Consultancy</a>
+                <a href="#">Development</a>
+                <a href="#">Design</a>
+                <a href="#">Technical</a>
+            </div>
+            </div>
+            <li><a href="#">Contact</a></li>
+          </ul> -->
+
+          <a class="navbar-click">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <a href="#form" class="btn navbar-btn">Request Consultancy</a>
+        </nav>
+      </header>
+
+      <!-- hero section -->
+      <main class="hero-section">
+        <div class="hero-img">
+          <img
+            src="./images/medium-shot-people-talking-office.jpg"
+            alt="foreground image with smartphone screens"
+            class="hero-img-top"
+          />
+         </div> 
+        <div class="hero-intro container">
+          <h1><strong>We create digital experiences that excite and inspire</strong></h1>
+          <p>
+            LuxService Digitize is a full service digital agency located in Luxembourg.
+
+            We are a team of professional designers, developers, marketers and IT specialists combining our knowledge and expertise to create exceptional designs and strategies, tailored to your business’s needs and requirements.
+            
+            Tell us about your goal and we’ll show you how you can achieve it. Whatever your project, we’d love to be involved.
+          </p>
+          <a href="#form"><button class="btn btn-primary">Request Consultancy</button></a>
+        </div>
+      </main>
+
+      <!-- why choose Digitalize section -->
+      <section class="cards-section">
+        <!-- section-title and p -->
+        <div class="cards-intro container">
+          <h2>Why choose LuxService Digitize?</h2>
+          <p>
+            We pride ourselves on delivering high-quality products that truly make a difference. 
+            For every project we always focus on the individual needs of our clients and strive to achieve something that we’re proud to put our name to. We offer:
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="cards-wrapper container">
+          <div class="cards-item">
+            <img
+              src="./images/conversation (1).png"
+              alt="online banking card icon"
+            />
+            <h4>Business Automation Consultancy</h4>
+            <p>
+              Our modern web and mobile applications allow you to keep track of
+              your finances wherever you are in the world
+            </p>
+          </div>
+          <div class="cards-item">
+            <img
+              src="./images/facetime.png"
+              alt="simple budgeting card icon"
+            />
+            <h4>Online Presence</h4>
+            <p>
+              See exactly where your money goes each month. Receive
+              notifications when you’re close to hitting your lim
+            </p>
+          </div>
+          <div class="cards-item">
+            <img
+              src="./images/web-design (1).png"
+              alt="fast onboarding card icon wtf"
+            />
+            <h4>Web Design and Mobile App Design</h4>
+            <p>
+              We don’t do branches. Open your account in minutes online and
+              start taking control of your finances right away.
+            </p>
+          </div>
+            <div class="cards-item">
+              <img src="./images/calendar.png" alt="Open Api icon" />
+              <h4>Digital Booking Managment System</h4>
+              <p>
+                Manage your savings, investments, pension, and much more from one
+                account. Tracking your money has never been easier.
+              </p>
+            </div>
+          
+        </div>
+      </section>
+      <!-- Contact form -->
+      <div class="contactTitle">
+      <h1><strong>Talk To Us About Your <span style="color: #ec1c24">Project</span></strong> 
+       </h1> 
+        <p>Please fill out this form and we will be in touch</p>
+      
+      </div>
+
+<div class="formContainer" role="main">
+  <form class="fields needs-validation" id="form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="project">Type Of Project</label>
+    <select id="project" name="project">
+      <option value="web">Web Design</option>
+      <option value="mobile">Mobile App Design</option>
+      <option value="technical">Technical</option>
+      <option value="all">All of the above</option>
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+      
+
+</body>
+      <!-- footer -->
+      <footer class="footer container">
+        <!-- footer logo -->
+        <!-- <a class="footer-logo" href="#">
+          <img src="" alt="LuxServices logo on footer" />
+        </a> -->
+        <!-- footer social icons -->
+        <div class="footer-icons-social">
+          <img
+            src="./images/icon-facebook.svg"
+            alt="small image for facebook"
+          />
+          <img
+            src="./images/icon-youtube.svg"
+            alt="small image for yotube"
+          />
+          <img
+            src="./images/icon-twitter.svg"
+            alt="small image for twitter"
+          />
+          <img
+            src="./images/icon-instagram.svg"
+            alt="small image for icon-instagram"
+          />
+        </div>
+        <!-- footer navbar -->
+        <ul class="footer-nav">
+          <li><a href="https://luxservice.lu/terms/">Terms</a></li>
+          <li><a href="https://luxservice.lu/support/">Support </a></li>
+          <li><a href="https://luxservice.lu/privacy/">Privacy Policy</a></li>
+        </ul>
+        <!-- footer btn -->
+        <!-- <a href="#form"><button class="btn btn-primary footer-btn">Request Consultancy</button></a> -->
+        <!-- footer cr -->
+        <p class="footer-copy" style="color: white">© LuxService. All Rights Reserved</p>
+      </footer>
+    </div>
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
