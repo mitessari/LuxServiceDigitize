@@ -267,8 +267,9 @@ border-radius: 20px;
   }
 
   .hero-intro h1 {
-    font-size: var(--spacing-30);
+    font-size: var(--spacing-40);
     text-align: left;
+    
   }
 
   .hero-intro > p {
@@ -431,6 +432,21 @@ border-radius: 20px;
 }
 
 /* Contact form */
+.error-text, .error-icon {
+  display: none;
+}
+ .field-group.error .error-icon{
+  width: 30px;
+ }
+
+.field-group.error .error-text,
+.field-group.error .error-icon{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.field-group.error input{
+border: 2px solid hsl(0,100%,74%);
+}
 .contactTitle h1 {
   padding: 10px;
   margin-top: 2rem;
@@ -555,7 +571,7 @@ input[type=submit]:hover {
   }
 
   .footer-nav {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr;
     grid-column-start: 2; 
     grid-row-start: 1;
     text-align: center;

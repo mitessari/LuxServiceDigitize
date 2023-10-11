@@ -159,24 +159,43 @@
       </div>
 
 <div class="formContainer" role="main">
-  <form class="fields needs-validation" id="form">
+  <form action="#" class="fields needs-validation" id="form">
+    <div class="field-group">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
+    <img src="./images/error.png" class="error-icon" alt="error-img">
+    <p class="error-text" style="color:#ec1c24">First Name cannot be empty</p>
+   </div>
+   <div class="field-group">
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <img src="./images/error.png" class="error-icon" alt="error-img">
+    <p class="error-text" style="color:#ec1c24">Last Name cannot be empty</p>
+    </div>
 
+    <div class="field-group">
+     <label for="email">Email</label>
+      <input type="text" id="email-address" placeholder="Email Address">
+        
+        <img src="./images/error.png" class="error-icon" alt="error-img">
+        <p class="error-text" style="color:#ec1c24;">Looks like this is not an email</p>
+      </div>
+     
     <label for="project">Type Of Project</label>
     <select id="project" name="project">
       <option value="web">Web Design</option>
       <option value="mobile">Mobile App Design</option>
       <option value="technical">Technical</option>
       <option value="all">All of the above</option>
-
+      <img src="./images/error.png" class="error-icon" alt="error-img">
+    <p class="error-text">Please choose a Type of Project</p>
     </select>
+    
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <img src="./images/error.png" class="error-icon" alt="error-img">
+    <p class="error-text">Please Write the Subject</p>
 
     <button class="btn btn-primary">Submit</button>
   </form>
